@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columns equally distributed */
+  gap: 5px;
+}
+
+.switch {
+  width: 100%; /* Take the full width of the column */
+  height: 50px; /* Height of each switch */
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.switch.green {
+  background-color: green;
+}
